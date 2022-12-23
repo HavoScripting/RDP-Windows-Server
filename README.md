@@ -1,17 +1,17 @@
-# WINRDP
+# LINUXRDP
 How to use 
 
 Just Fork this Repository, Go to Actions tab, Select the Windows-CRD workflow. Then select Run Workflow fill the following data in CRD Code and your Pin in the fields. After that, Press Start.
 
 Input the following code in the fields.
 
-Get the Windows (Powershell) command from here:
+Get the Linux ( Debian Linux ) command from here:
 
 https://remotedesktop.google.com/headless
 
 ==================================================================
 
-& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AWgavdfqxKAT_Cwntbt0E6tmQ7124j34AS2KH8MVN8dLTdIAVd5-i2L9YtCQAEAS4khAYA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AWgavdfqxKAT_Cwntbt0E6tmQ7124j34AS2KH8MVN8dLTdIAVd5-i2L9YtCQAEAS4khAYA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
 
 ==================================================================
 
